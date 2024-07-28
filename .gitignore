@@ -1,1 +1,5 @@
-/test
+.venv/
+build/
+*.so
+.DS_Store
+__pycache/
