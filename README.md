@@ -1,6 +1,6 @@
 # pydialog
 
-Python bindings for [osdialog](https://github.com/AndrewBelt/osdialog). Supports MacOS (Cocoa), Windows (WinAPI), Linux (GTK2+3 or Zenity). Available on [Pypi](https://pypi.org/project/py-osdialog/0.1.0/).
+Python bindings for [osdialog](https://github.com/AndrewBelt/osdialog). Supports MacOS (Cocoa), Windows (WinAPI), Linux (GTK2+3 or Zenity). Available on [pypi](https://pypi.org/project/py-osdialog/0.1.0/).
 
 ```
 python3 -m pip install py-osdialog
