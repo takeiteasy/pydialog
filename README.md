@@ -1,6 +1,57 @@
 # pydialog
 
-Python bindings for [osdialog](https://github.com/AndrewBelt/osdialog).
+Python bindings for [osdialog](https://github.com/AndrewBelt/osdialog). Supports MacOS (Cocoa), Windows (WinAPI), Linux (GTK2+3 or Zenity).
+
+## API
+
+Message Box:
+```python
+# pydialog.alert(message, &optional level, button_types)
+
+if pydialog.alert("Yes or no?", pydialog.WARNING, pydialog.YES_NO):
+    print("YES!")
+else:
+    print("No")
+```
+
+Input Prompt:
+```python
+# pydialog.prompt(message, &optional default_text, level)
+```
+
+Open File Dialog:
+```python
+# pydialog.open_file(start_path, &optional default_text, filter)
+```
+
+Open Directory Dialog:
+```python
+# pydialog.open_dir(start_path, &optional default_text, filter)
+```
+
+Save File Dialog:
+```python
+# pydialog.save_file(start_path, &optional default_text, filter)
+```
+
+Color Picker Dialog:
+```python
+# pydialog.color_picker(initial_r, initial_g, initial_b, initial_a)
+```
+
+Prompt Levels:
+```python
+pydialog.INFO
+pydialog.WARNING
+pydialog.CRITICAL
+```
+
+Prompt Buttons:
+```python
+pydialog.OK
+pydialog.OK_CANCEL
+pydialog.YES_NO
+```
 
 ## LICENSE
 ```
