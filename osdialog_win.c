@@ -5,6 +5,9 @@
 #include <shlobj.h>
 #include "osdialog.h"
 
+#if defined(_MSC_VER) 
+#define snwprintf _snwprintf
+#endif
 
 extern osdialog_save_callback osdialog_save_cb;
 extern osdialog_restore_callback osdialog_restore_cb;

@@ -1,5 +1,7 @@
 # pydialog
 
+Python bindings for [osdialog](https://github.com/AndrewBelt/osdialog).
+
 ## LICENSE
 ```
 The MIT License (MIT)

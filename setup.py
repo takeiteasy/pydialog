@@ -38,7 +38,7 @@ def pydialog_extension():
     elif p == "Windows":
         return Extension("pydialog",
                          sources=["pydialog.c", "osdialog.c", "osdialog_win.c"],
-                         libraries=["comdlg32"])
+                         libraries=["comdlg32", "user32", "shell32", "advapi32", "shlwapi", "ucrt"])
     else:
         # Assume Linux and check for GTK version
         try:

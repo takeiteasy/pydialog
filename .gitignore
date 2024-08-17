@@ -1,4 +1,4 @@
-.venv/
+venv/
 build/
 *.so
 .DS_Store
