@@ -65,7 +65,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/takeiteasy/pydialog",
-    include_dirs="osdialog",
+    include_dirs="/Users/george/git/pydialog",
     ext_modules=[pydialog_extension()],
     classifiers=[
         "Programming Language :: Python :: 3",
