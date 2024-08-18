@@ -58,7 +58,7 @@ def pydialog_extension():
 
 setup(
     name="pydialog",
-    version="0.1.0",
+    version="0.1.1",
     author="George Watson",
     author_email="gigolo@hotmail.co.uk",
     description="Python bindings for osdialog",

@@ -59,6 +59,8 @@ static PyObject* py_osdialog_file(osdialog_file_action action, PyObject *args) {
     char *result = osdialog_file(action, path, default_text, filters);
     if (filters)
         osdialog_filters_free(filters);
+    if (!result)
+        Py_RETURN_NONE;
     PyObject *py_result = PyUnicode_FromString(result);
     free(result);
     return py_result;

@@ -17,10 +17,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
-                if pydialog.alert("Hello, world!", pydialog.WARNING, pydialog.YES_NO):
-                    print("YES!")
-                else:
-                    print("noooooo")
+               print(pydialog.open_file("/Users/george")) 
         if event.type == pygame.QUIT:
             running = False
     screen.fill(BLACK)
